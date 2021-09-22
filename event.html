@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>FORM REGISTRATION</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<style>
+legend 
+ {
+    margin-left:40%;
+}
+#card
+{
+  width: 30%;
+  text-align: center;
+  height: 30px;
+  border-radius: 90px;
+  background-color: #e75480;
+}
+h2
+{
+ color: red;
+ background-color:yellow;
+}
+</style>
+</head>
+<body>
+<h1><center><u>STUDENT WORKSHOP REGISTRATION</u></center></h1>
+<form method="post" action="./final.html">
+<fieldset>
+<legend> <h2 id="t">STUDENT DETAILS </H2></legend>
+	<label> NAME  :  </label>
+	<input type="text" name="textN" size="50" tabindex="1" maxlength="50" autocomplete="off" autofocus required><br><br><br>
+	<label> ROLL NUMBER : </label>
+	<input type="text" name="textR" tabindex="2" autocomplete="off" required> <br><br><br>
+	<label> DATE OF BIRTH : </label><br><br>
+	<input type = "date" name="date" tabindex="3" autocomplete="off" required > <br><br><br>
+	<label> COLLEGE NAME : </label>
+	<input type="text" name="coll"size="50" tabindex="4" autocomplete="off" required> <br><br><br>
+    <label>INSTITUTION MAIL ID : </label>
+	<input type="text" name="coll"size="30" tabindex="5" autocomplete="off" required > <br><br><br>
+	<label> MOBILE NUMBER : </label>
+	<input type="text" name="coll" size="10" tabindex="6" autocomplete="off"><br><br><br>
+    <label>GENDER : </label>
+	<input type="radio" id="male" name="gender" value="m">
+	<label> MALE</label>
+	<input type="radio" id="female" name="gender" value="f">
+	<label>  FEMALE</label> <br><br><br>
+	<label>PROGRAMME</label>
+	<input type="radio" id="BE" name="Programkkk" value="BE">
+	<label> BE</label>
+	<input type="radio" id="ME" name="Programkkk" value="ME" >
+	<label> ME</label>
+	<input type="radio" id="B.Tech" name="Programkkk" value="B.Tech" >
+	<label> B.Tech</label>
+	<input type="radio" id="B.Sc" name="Programkkk" value="B.Sc" >
+	<label> B.Sc</label>
+	<input type="radio" id="MBA" name="Programkkk" value="MBA" >
+	<label> MBA</label>
+	<label> </label><br><br><br>
+	<label> BRANCH : </label>
+	<select name="branch" >
+	<option value="CSE"> COMPUTER SCIENCE </option>
+	<option value="IT" > INFORMATION TECHNOLOGY </option>
+	<option value="EEE"> ELECTRICAL & ELECTRONICS </option>
+	<option value="ECE"> ELECTRICAL & COMMUNICATION </option>
+	<option value="MECH"> MECHANICAL</option>
+	<option value="AUTO"> AUTOMOBILE </option>
+	<option value="CIVIL"> CIVIL </option>
+	</select>  <br><br><br>
+	<label>YEAR : </label>
+	<input type="checkbox" id="I" name="year" value="I">
+	<label> I</label>
+	<input type="checkbox" id="II" name="year" value="II">
+	<label> II</label>
+	<input type="checkbox" id="III" name="year" value="III">
+	<label> III</label>
+	<input type="checkbox" id="IV" name="year" value="IV">
+	<label> IV</label><br><br><br>
+	<label>Upload your ID CARD  :  </label><br><br>
+	<input type="file" id="card" name = "idcard" > 
+	<br><br><br>
+</fieldset>
+<button type="submit" value="REGISTER" >REGISTER</button>
+<a href="#t">
+<input type="reset" value="RESET"  style='margin-left:185px'></a>
+</form>
+</body>
+</html>
